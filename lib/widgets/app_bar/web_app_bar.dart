@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemy_clone/widgets/spacing/horizontal_spacing.dart';
 
 import 'responsive_body_content.dart';
 
@@ -15,21 +16,15 @@ class WebAppBar extends StatelessWidget {
     return Row(
       children: [
         Text('Ubely'),
-        _horizontalSpacing(32),
+        HorizontalSpacing(32),
         ResponsiveBodyContent(),
-        _horizontalSpacing(16),
+        HorizontalSpacing(16),
         _shoppingCartButton(),
-        _horizontalSpacing(16),
+        HorizontalSpacing(16),
         _loginButton(),
-        _horizontalSpacing(8),
+        HorizontalSpacing(8),
         _createAccountButton(),
       ],
-    );
-  }
-
-  Widget _horizontalSpacing(double width) {
-    return SizedBox(
-      width: width,
     );
   }
 

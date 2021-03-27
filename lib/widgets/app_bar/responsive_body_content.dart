@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemy_clone/widgets/spacing/horizontal_spacing.dart';
 
 class ResponsiveBodyContent extends StatelessWidget {
   @override
@@ -10,13 +11,13 @@ class ResponsiveBodyContent extends StatelessWidget {
             children: [
               _textField(),
               if (constraints.maxWidth >= 500) ...[
-                _horizontalSpacing(10),
+                HorizontalSpacing(10),
                 _textButton(
                   text: 'Aprender',
                 ),
               ],
               if (constraints.maxWidth >= 600) ...[
-                _horizontalSpacing(10),
+                HorizontalSpacing(10),
                 _textButton(
                   text: 'Comprar',
                 ),
@@ -25,12 +26,6 @@ class ResponsiveBodyContent extends StatelessWidget {
           );
         },
       ),
-    );
-  }
-
-  Widget _horizontalSpacing(double width) {
-    return SizedBox(
-      width: width,
     );
   }
 
