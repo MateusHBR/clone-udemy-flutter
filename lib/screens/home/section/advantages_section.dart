@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../spacing/horizontal_spacing.dart';
+import '../../../widgets/spacing/horizontal_spacing.dart';
 
 class AdvantagesSection extends StatelessWidget {
   @override

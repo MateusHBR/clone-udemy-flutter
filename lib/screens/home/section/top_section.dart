@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:udemy_clone/utils/breakpoints.dart';
 
-import '../custom_search_field.dart';
-import '../spacing/vertical_spacing.dart';
+import '../../../utils/breakpoints.dart';
+import '../../../widgets/custom_search_field.dart';
+import '../../../widgets/spacing/vertical_spacing.dart';
 
 class TopSection extends StatelessWidget {
   @override
@@ -30,7 +30,7 @@ class TopSection extends StatelessWidget {
           AspectRatio(
             aspectRatio: 3.5,
             child: Image.network(
-              "https://img-b.udemycdn.com/notices/home_banner/image_udlite/f8324ecd-1a8d-4260-8e15-ec8aaeffa1d1.jpg?secure=-eRz-h63XWUvoYrcMDtJEA%3D%3D%2C1616959523",
+              "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
               fit: BoxFit.cover,
             ),
           ),
@@ -54,7 +54,7 @@ class TopSection extends StatelessWidget {
             height: 250,
             width: double.infinity,
             child: Image.network(
-              "https://img-b.udemycdn.com/notices/home_banner/image_udlite/f8324ecd-1a8d-4260-8e15-ec8aaeffa1d1.jpg?secure=-eRz-h63XWUvoYrcMDtJEA%3D%3D%2C1616959523",
+              "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
               fit: BoxFit.cover,
             ),
           ),
@@ -75,7 +75,7 @@ class TopSection extends StatelessWidget {
         AspectRatio(
           aspectRatio: 3.4,
           child: Image.network(
-            "https://img-b.udemycdn.com/notices/home_banner/image_udlite/f8324ecd-1a8d-4260-8e15-ec8aaeffa1d1.jpg?secure=-eRz-h63XWUvoYrcMDtJEA%3D%3D%2C1616959523",
+            "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
             fit: BoxFit.cover,
           ),
         ),

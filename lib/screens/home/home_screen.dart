@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:udemy_clone/widgets/section/advantages_section.dart';
+import 'package:udemy_clone/widgets/curse_item.dart';
 
 import '../../utils/breakpoints.dart';
-import '../../widgets/app_bar/mobile_app_bar.dart';
-import '../../widgets/app_bar/web_app_bar.dart';
-import '../../widgets/section/top_section.dart';
+import './app_bar/mobile_app_bar.dart';
+import './app_bar/web_app_bar.dart';
+import './section/advantages_section.dart';
+import './section/top_section.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -46,9 +47,32 @@ class HomeScreen extends StatelessWidget {
           children: [
             TopSection(),
             AdvantagesSection(),
+            _cursesSection(),
           ],
         ),
       ),
     );
+  }
+
+  Widget _cursesSection() {
+    return LayoutBuilder(builder: (context, constraints) {
+      return GridView.builder(
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 250,
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 16,
+        ),
+        padding: EdgeInsets.symmetric(
+          vertical: 16,
+          horizontal: constraints.maxWidth <= Breakpoints.web ? 16 : 0,
+        ),
+        physics: NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return CurseItem();
+        },
+      );
+    });
   }
 }
