@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemy_clone/widgets/section/advantages_section.dart';
 
 import '../../utils/breakpoints.dart';
 import '../../widgets/app_bar/mobile_app_bar.dart';
@@ -40,10 +41,11 @@ class HomeScreen extends StatelessWidget {
     return Align(
       alignment: Alignment.topCenter,
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1400, maxHeight: 500),
+        constraints: BoxConstraints(maxWidth: 1400),
         child: ListView(
           children: [
             TopSection(),
+            AdvantagesSection(),
           ],
         ),
       ),
